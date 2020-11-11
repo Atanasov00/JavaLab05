@@ -1,5 +1,9 @@
 package it.unibo.oop.lab05.ex2;
 
+import java.util.Random;
+import java.util.Set;
+import java.util.TreeSet;
+
 /**
  * 
  */
@@ -24,5 +28,15 @@ public final class UseSetWithOrder {
          * 
          * 3) Prints the set, which must be ordered
          */
+    	final Set<String> set = new TreeSet<>(new StringComparator());
+    	Random rd = new Random();
+    	
+    	
+    	for(int i = 0; i < 100; i++) {
+    		set.add(String.valueOf(rd.nextInt(200)));
+    	}
+    	
+    	System.out.println(set);
+    	
     }
 }
