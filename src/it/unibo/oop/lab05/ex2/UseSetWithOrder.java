@@ -28,14 +28,18 @@ public final class UseSetWithOrder {
          * 
          * 3) Prints the set, which must be ordered
          */
+    	
+    	//Creazione di un TreeSet, con il suo comparatore
     	final Set<String> set = new TreeSet<>(new StringComparator());
+    	//Variabile random per la generazione di numeri casuali
     	Random rd = new Random();
     	
-    	
+    	//Aggiunta dei numeri casuali
     	for(int i = 0; i < 100; i++) {
     		set.add(String.valueOf(rd.nextInt(200)));
     	}
     	
+    	//Stampa della collezione
     	System.out.println(set);
     	
     }

@@ -39,12 +39,6 @@ public final class UseWarehouse {
         System.out.println(w.allNames());
         System.out.println(w.allProducts());
         
-        
-        System.out.println(w.containsProduct(new ProductImpl("Tablet", 10)));
-        System.out.println(w.containsProduct(p1));
-        
-        System.out.println(w.getQuantity("Tablet"));
-        System.out.println(w.getQuantity("Smartphone"));
     }
 
 }
